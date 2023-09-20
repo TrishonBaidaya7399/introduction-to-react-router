@@ -1,7 +1,12 @@
-import { useRouteError } from "react-router-dom";
+import { useNavigate, useRouteError } from "react-router-dom";
 import { LiaPoopSolid } from 'react-icons/lia'
 export default function ErrorPage() {
   const error = useRouteError();
+  const navigate = useNavigate();
+  const handleBack=()=>{
+      // it will go 1 step back from the browsers history
+      navigate(-1)
+  }
   console.error(error);
 
   return (
@@ -12,6 +17,7 @@ export default function ErrorPage() {
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
+      <button style={{fontSize:'20px', padding:'10px 30px 10px 30px'}} onClick={handleBack}>Go Back</button>
     </div>
   );
 }

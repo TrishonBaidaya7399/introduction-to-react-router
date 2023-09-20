@@ -13,8 +13,8 @@ const Header = () => {
                     <Link style={{color:'white', fontSize:'20px'}} to={'/about'}>About</Link>
                     <Link style={{color:'white', fontSize:'20px'}} to={'/contact'}>Contact Us</Link>
                     <Link style={{color:'white', fontSize:'20px'}} to={'/users'}>Users</Link>
-                    <Link style={{color:'white', fontSize:'20px'}} to={'/undefined'}>Undefined</Link>
                     <Link style={{color:'white' , fontSize:'20px'}} to={'/posts'}>Timeline</Link>
+                    <Link style={{color:'yellow', fontSize:'20px'}} to={'/undefined'}>Undefined</Link>
                 </ul>
             </nav>
         </div>

@@ -1,7 +1,12 @@
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Post = ({post}) => {
-    const {userId, id, title, body}= post;
+    const {userId, id, title}= post;
+    const navigate= useNavigate();
+    const handleShowDetail=()=>{
+        navigate(`/post/${id}`)
+    }
+
     return (
         <div style={{border: "2px solid black", borderRadius: '10px', padding: '20px', marginBottom: '20px'}}>
             <div>
@@ -10,7 +15,11 @@ const Post = ({post}) => {
                 <h4>Posted by: Users Id= {userId}</h4>
             </div>
              <h1>{title}</h1>
+             <div style={{display: 'flex', flexDirection:'column', gap:'20px'}}>
              <Link to={`/post/${id}`}><button>Post Details</button></Link>
+             {/* //by using useNavigate */}
+             <button onClick={handleShowDetail}>Click to show detail</button>
+             </div>
             </div>
         </div>
     );
