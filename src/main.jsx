@@ -13,7 +13,6 @@ import Contact from './Components/Contact/Contact';
 import Users from './Components/Users/Users';
 import UserDetails from './Components/UserDetails/UserDetails';
 import Posts from './Components/Posts/Posts';
-import Post from './Components/Post/Post';
 import PostDetails from './Components/PostDetails/PostDetails';
 
 const router = createBrowserRouter([
