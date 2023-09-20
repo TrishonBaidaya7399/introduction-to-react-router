@@ -6,7 +6,7 @@ const Users = () => {
     return (
         <div>
             <h1>Our Users: {users.length}</h1>
-            <div style={{display: 'grid', gridTemplate: 'repeat(3, 1fr)', gap:'10px', }}>
+            <div style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap:'10px', }}>
                 {
                     users.map((user, id)=> <User key={id} user={user}></User>)
                 }

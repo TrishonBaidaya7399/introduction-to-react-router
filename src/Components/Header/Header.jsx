@@ -5,19 +5,16 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div style={{backgroundColor:'gray'}}>
-            <nav>
-               <span>My Website</span>
-                <ul style={{display:'flex', gap:'20px', listStyle:'none'}}>
-                    {/* <li><a href="/home">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                    <li><a href="/app">App</a></li> */}
-                    <Link to={'/home'}>Home</Link>
-                    <Link to={'/about'}>About</Link>
-                    <Link to={'/contact'}>Contact Us</Link>
-                    <Link to={'/users'}>Users</Link>
-                    <Link to={'/undefined'}>Undefined</Link>
+        <div style={{backgroundColor:'gray', width:'100vw', marginBottom:'30px'}}>
+            <nav style={{padding: '20px'}}>
+               <span style={{fontSize:'30px', color:'white'}}>My Website</span>
+                <ul style={{display:'flex', gap:'20px',color:'white',listStyle:'none', justifyContent:'center'}}>
+                    <Link style={{color:'white', fontSize:'20px'}} to={'/home'}>Home</Link>
+                    <Link style={{color:'white', fontSize:'20px'}} to={'/about'}>About</Link>
+                    <Link style={{color:'white', fontSize:'20px'}} to={'/contact'}>Contact Us</Link>
+                    <Link style={{color:'white', fontSize:'20px'}} to={'/users'}>Users</Link>
+                    <Link style={{color:'white', fontSize:'20px'}} to={'/undefined'}>Undefined</Link>
+                    <Link style={{color:'white' , fontSize:'20px'}} to={'/posts'}>Timeline</Link>
                 </ul>
             </nav>
         </div>
