@@ -1,7 +1,7 @@
 // import React from 'react';
 // import PropTypes from 'prop-types';
-
-import { Link } from "react-router-dom";
+import "./Header.css"
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -9,12 +9,12 @@ const Header = () => {
             <nav style={{padding: '20px'}}>
                <span style={{fontSize:'30px', color:'white'}}>My Website</span>
                 <ul style={{display:'flex', gap:'20px',color:'white',listStyle:'none', justifyContent:'center'}}>
-                    <Link style={{color:'white', fontSize:'20px'}} to={'/home'}>Home</Link>
-                    <Link style={{color:'white', fontSize:'20px'}} to={'/about'}>About</Link>
-                    <Link style={{color:'white', fontSize:'20px'}} to={'/contact'}>Contact Us</Link>
-                    <Link style={{color:'white', fontSize:'20px'}} to={'/users'}>Users</Link>
-                    <Link style={{color:'white' , fontSize:'20px'}} to={'/posts'}>Timeline</Link>
-                    <Link style={{color:'yellow', fontSize:'20px'}} to={'/undefined'}>Undefined</Link>
+                    <NavLink to={'/home'}>Home</NavLink>
+                    <NavLink to={'/about'}>About</NavLink>
+                    <NavLink to={'/contact'}>Contact Us</NavLink>
+                    <NavLink to={'/users'}>Users</NavLink>
+                    <NavLink to={'/posts'}>Timeline</NavLink>
+                    <NavLink to={'/undefined'}>Undefined</NavLink>
                 </ul>
             </nav>
         </div>
